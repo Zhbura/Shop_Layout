@@ -1,0 +1,57 @@
+.header {
+    background: #222222;
+    padding: 18px 32px;
+    height: 75px;
+    box-sizing: border-box;
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search {
+        margin-left: 41px;
+    }
+
+    &__user {
+        padding-left: 25px;
+        padding-right: 42px;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__cart-icon {
+        position: relative;
+
+        span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            color: white;
+            background: #f16d7f;
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+            top: -19px;
+            right: -10px;
+        }
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        &__cart {
+            display: none;
+        }
+    }
+}
