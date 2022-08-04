@@ -5,7 +5,7 @@
     .container {
         display: flex;
         justify-content: space-between;
-        padding: 65px 230px 65px 230px;
+        padding: 65px 0 65px 0;
 
         @media (min-width: 320px) and (max-width: 767px) {
             flex-direction: column;
@@ -14,7 +14,7 @@
             padding: 24px 0 46px 0;
         }
 
-        @media (min-width: 768px) and (max-width: 1140px) {
+        @media (min-width: 768px) and (max-width: 1599px) {
             padding: 65px 16px 65px 16px;
         }
     }
@@ -25,14 +25,45 @@
         color: #F16D7F;
     }
 
-    &__right a {
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-
-        &:hover {
-            color: #F16D7F;
+    &__right {
+        @media (min-width: 320px) and (max-width: 767px) {
+            margin-top: 32px;
         }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+
+            &:hover {
+                color: #F16D7F;
+            }
+        }
+    }
+}
+
+.cart-top {
+    height: 148px;
+    background: #F8F3F4;
+
+    .container {
+        padding: 60px 0 60px 0;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            display: flex;
+            justify-content: center;
+            padding: 50px 0 70px 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 1599px) {
+            padding: 60px 0 60px 16px;
+        }
+    }
+
+    &__heading {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
     }
 }
