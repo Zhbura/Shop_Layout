@@ -4,6 +4,7 @@
 @import "_subscribe.scss";
 @import "_servises.scss";
 @import "_products.scss";
+@import "_new-arrivals.scss";
 
 * {
     margin: 0;
@@ -279,45 +280,6 @@ body {
     }
 }
 
-.new-arrivals {
-    height: 148px;
-    background: #F8F3F4;
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        padding: 65px 230px 65px 230px;
-
-        @media (min-width: 320px) and (max-width: 767px) {
-            flex-direction: column;
-            align-items: center;
-            justify-content: start;
-            padding: 24px 0 46px 0;
-        }
-
-        @media (min-width: 768px) and (max-width: 1140px) {
-            padding: 65px 16px 65px 16px;
-        }
-    }
-
-    &__left {
-        font-size: 24px;
-        line-height: 29px;
-        color: #F16D7F;
-    }
-
-    &__right a {
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 17px;
-        color: #636363;
-
-        &:hover {
-            color: #F16D7F;
-        }
-    }
-}
-
 .filters {
     .container {
         display: flex;
@@ -339,36 +301,52 @@ body {
         line-height: 17px;
         color: #000000;
         position: relative;
+    }
 
-        img {
-            margin-left: 11px;
+    &__icon {
+        margin-left: 11px;
 
-            @media (min-width: 320px) and (max-width: 767px) {
-                width: 37px;
-                height: 25px;
-            }
+        @media (min-width: 320px) and (max-width: 767px) {
+            width: 37px;
+            height: 25px;
+        }
+
+        &_pink {
+            left: 70px;
+            top: 23px;
+            z-index: 2;
+            position: relative;
         }
     }
 
     &__label {
         position: relative;
-        z-index: 2;
         cursor: pointer;
+        z-index: 2;
 
         @media (min-width: 320px) and (max-width: 767px) {
             display: none;
         }
+
+        &_pink {
+            position: absolute;
+            color: #ef5b70 !important;
+            left: 16px;
+            top: 24px;
+        }
     }
 
     &__pop-up {
-        padding: 16px 15px 16px 18px;
+        padding: 36px 15px 16px 18px;
         width: 360px;
         background: #FFFFFF;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
         position: absolute;
+        z-index: 1;
     }
 
     &__category {
+
         &:not(:first-child) {
             margin-top: 24px;
         }
@@ -387,10 +365,16 @@ body {
     &__heading {
         color: #EF5B70;
         border-bottom: 1px solid #EBEBEB;
+        padding-left: 11px;
+        cursor: pointer;
 
         &:not(:last-child) {
             margin-bottom: 18px;
         }
+    }
+
+    .line-pink {
+        border-left: 5px solid #EF5B70;
     }
 
     &__right {
@@ -424,6 +408,7 @@ body {
                 margin-top: 12px;
                 background: #FFFFFF;
                 box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                z-index: 1;
 
                 p {
                     margin-bottom: 7px;

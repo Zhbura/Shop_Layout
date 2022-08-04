@@ -1,0 +1,38 @@
+.new-arrivals {
+    height: 148px;
+    background: #F8F3F4;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 230px 65px 230px;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            padding: 24px 0 46px 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 1140px) {
+            padding: 65px 16px 65px 16px;
+        }
+    }
+
+    &__left {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+    }
+
+    &__right a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+}
