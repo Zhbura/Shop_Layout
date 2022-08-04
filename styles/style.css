@@ -102,7 +102,7 @@
 }
 
 .subscribe {
-  background-image: url(images/background_subscribe.png);
+  background-image: url(../images/background_subscribe.png);
   background-size: cover;
 }
 .subscribe .container {
@@ -381,6 +381,42 @@
 .products__button_bottom a:hover {
   color: white;
   background: #F26376;
+}
+
+.products_for_products {
+  display: grid;
+  grid-template-columns: 360px 360px 360px;
+  grid-template-rows: 581px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+  .products_for_products {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: 581px;
+    grid-gap: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .products_for_products {
+    grid-template-columns: 360px;
+    grid-template-rows: repeat(2, 580px);
+    grid-row-gap: 16px;
+  }
+}
+
+.products_for_products_margin {
+  margin: 169px 128px;
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+  .products_for_products_margin {
+    margin-top: 128px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .products_for_products_margin {
+    margin: 64px 64px;
+  }
 }
 
 .new-arrivals {
@@ -825,4 +861,176 @@ body {
 }
 .pagination a:hover {
   color: #EF5B70;
+}
+
+.product-top-img {
+  background: #F7F7F7;
+  display: flex;
+  border: 1px solid #eaeaea;
+}
+.product-top-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+  .product-top-img img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .product-top-img img {
+    width: 300px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (min-width: 1141px) {
+  .product-top-img img {
+    margin-top: 11px;
+  }
+}
+.product-top-img .sliderLeftArrow,
+.product-top-img .sliderRightArrow {
+  display: block;
+  align-self: center;
+  background-color: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.product-top-img .sliderLeftArrow {
+  background-image: url(../images/product/leftArrow.svg);
+}
+.product-top-img .sliderLeftArrow:hover {
+  background-image: url(../images/product/leftArrowHover.svg);
+}
+.product-top-img .sliderRightArrow {
+  background-image: url(../images/product/rightArrow.svg);
+}
+.product-top-img .sliderRightArrow:hover {
+  background-image: url(../images/product/rightArrowHover.svg);
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  padding-top: 65px;
+  padding-bottom: 64px;
+  background: white;
+}
+@media (min-width: 1600px) {
+  .collection {
+    margin-top: -64px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.collection__info-top {
+  text-align: center;
+}
+.collection__info-top h2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-bottom: 12px;
+}
+.collection__info-top .line-pink {
+  width: 63px;
+  height: 3px;
+  margin: 0 auto 12px;
+  background: #EF5B70;
+}
+.collection__info-top h3 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+}
+.collection__info-top p {
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5E5E;
+  max-width: 555px;
+  margin: 48px auto 32px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .collection__info-top p {
+    max-width: 326px;
+  }
+}
+.collection__info-top .price {
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+.collection__info-top .grey-line {
+  width: 642px;
+  height: 1px;
+  background: #EAEAEA;
+  margin: 65px auto;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .collection__info-top .grey-line {
+    width: 175px;
+    margin: 32px auto 49px;
+  }
+}
+.collection__info-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.collection__info-bottom .sort {
+  display: flex;
+}
+.collection__info-bottom .sort > div:not(:last-child) {
+  margin-right: 23px;
+}
+.collection__info-bottom .sort a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .collection__info-bottom .sort a {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+.collection__info-bottom .sort img {
+  margin-left: 9px;
+}
+.collection__button {
+  align-self: center;
+  margin-top: 48px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .collection__button {
+    margin-top: 64px;
+  }
+}
+.collection__button button {
+  padding: 14px 53px 12px 0;
+  border: 1px solid #FF6A6A;
+  background: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  display: flex;
+  cursor: pointer;
+}
+.collection__button button img {
+  display: block;
+  margin-right: 23px;
+  margin-left: 24px;
+  margin-top: -3px;
 }/*# sourceMappingURL=style.css.map */
