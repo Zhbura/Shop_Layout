@@ -888,6 +888,8 @@ body {
 
             @media (min-width: 320px) and (max-width: 767px) {
                 margin-top: 48px;
+                max-width: 360px;
+                align-self: center;
             }
 
             @media (min-width: 1141px) {
@@ -899,11 +901,12 @@ body {
                 line-height: 19px;
                 color: #FFFFFF;
                 background: #F16D7F;
-                padding: 15px 42px;
+                padding: 15px 15px;
                 box-sizing: border-box;
                 border: none;
                 display: block;
                 margin: 0 auto;
+                max-swidth: 273px;
             }
 
             &__text {
