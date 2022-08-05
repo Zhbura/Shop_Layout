@@ -906,7 +906,7 @@ body {
                 border: none;
                 display: block;
                 margin: 0 auto;
-                max-swidth: 273px;
+                max-width: 273px;
             }
 
             &__text {
@@ -966,5 +966,174 @@ body {
 
     @media (min-width: 1141px) and (max-width: 1599px) {
         margin-left: 20px;
+    }
+}
+
+.registration {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__left {
+        flex-grow: 1;
+
+        p {
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            font-weight: 300;
+            margin-top: 15px;
+            margin-bottom: 39px;
+            max-width: 359px;
+        }
+
+        .forms {
+            button {
+                width: 167px;
+                height: 50px;
+                background-color: #F16D7F;
+                border: none;
+                box-sizing: border-box;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+
+            &__input-text {
+                width: 100%;
+                height: 45px;
+                border: 1px solid #A4A4A4;
+                box-sizing: border-box;
+                padding: 12px 17px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+                margin-top: 20px;
+
+                &::-webkit-input-placeholder {
+                    font-family: inherit;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+
+                &::-moz-placeholder {
+                    font-family: inherit;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+
+                &:-ms-input-placeholder {
+                    font-family: inherit;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+
+                &:-moz-placeholder {
+                    font-family: inherit;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #B1B1B1;
+                }
+            }
+
+            &__input-radio {
+                display: flex;
+                align-items: center;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+                margin-top: 31px;
+                margin-bottom: 33px;
+
+                input {
+                    margin-right: 10px;
+                }
+
+                span:not(:first-of-type) {
+                    margin-left: 20px;
+                }
+
+                @media (min-width: 1600px) {
+                    span:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+
+    &__right {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        max-width: 358px;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            margin-top: 40px;
+        }
+
+        @media (min-width:768px) and (max-width: 1599px) {
+            margin-left: 20px;
+        }
+
+        @media (min-width: 1600px) {
+            margin-left: 128px;
+            font-size: 24px;
+            line-height: 29px;
+            max-width: 652px;
+        }
+
+        p {
+            margin-top: 32px;
+            margin-bottom: 22px;
+
+            @media (min-width: 1600px) {
+                margin-top: 22px;
+            }
+        }
+
+        ul {
+            list-style-image: url(../images/registration/spisok_registration.svg);
+            margin-left: 30px;
+
+            >li:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.registration-margin {
+    margin: 64px 96px;
+
+    @media (min-width: 768px) and (max-width: 1599px) {
+        margin: 40px 16px 96px 16px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        margin: 40px 8px 96px 8px;
     }
 }
